@@ -1,0 +1,27 @@
+﻿<div class="text-center">
+    <h1 class="display-4">What's up Sk8er!!</h1>
+    <br />
+
+@{
+    ViewData["Title"] = "Pricing";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Interesting in picking up skating yourself? Check out pricing below.</p>
+<form>
+    <br />
+    <label>Desired Hours</label>
+    <br />
+    <input id="Hours" />
+    <br />
+    <label>Price Per Hour</label>
+    <br />
+    <input id="ChargePerHour" readonly value="$20/Hour" />
+    <br />
+    <input type="button" value="Calculate Price" id="BtnSubmit" onclick="TotalCost()" />
+    <br />
+    <label>Total Cost</label>
+    <br />
+    <input id="total" readonly />
+</form>
+</div>
